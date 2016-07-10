@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{328350E7-A168-47D4-9E28-A260BFC77D8E}</ProjectGuid>
+    <ProjectGuid>{EAF526C9-CC05-4E26-A618-B626B38AA5ED}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProjetoFinal</RootNamespace>
-    <AssemblyName>ProjetoFinal</AssemblyName>
+    <RootNamespace>ConsoleApplication1</RootNamespace>
+    <AssemblyName>ConsoleApplication1</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -32,20 +32,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Entities\Contato.cs" />
-    <Compile Include="Entities\Fornecedor.cs" />
-    <Compile Include="Entities\FornecedorConvencional.cs" />
-    <Compile Include="Entities\FornecedorIndividual.cs" />
-    <Compile Include="Entities\Peixe.cs" />
-    <Compile Include="Factories\FornecedorFactory.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="System" />
-  </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
