@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace ProjetoFinal.Entities
 {
@@ -22,17 +17,17 @@ namespace ProjetoFinal.Entities
 
     public class Peixe
     {
-        public int Id { get; set; }
-        public string Nome { get; set; }
-        public Cor Cor { get; set; }
-        public EnumEspecie EnumEspecie { get; set; }
-
-        private IPeixeRepository _peixeRepository;
+        private readonly IPeixeRepository _peixeRepository;
 
         public Peixe(IPeixeRepository peixeRepository)
         {
             _peixeRepository = peixeRepository;
         }
+
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public Cor Cor { get; set; }
+        public EnumEspecie EnumEspecie { get; set; }
 
         public List<Peixe> GetPeixesIrmaos()
         {

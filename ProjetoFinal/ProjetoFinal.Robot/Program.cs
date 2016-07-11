@@ -1,14 +1,12 @@
-﻿using ProjetoFinal.Service.Services;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using ProjetoFinal.Domain.Entities;
-using ProjetoFinal.Domain.Interfaces.Repository;
 using ProjetoFinal.Domain.Interfaces.Service;
 using ProjetoFinal.Domain.Interfaces.UnitOfWork;
+using ProjetoFinal.Service.Services;
 
 namespace ProjetoFinal.Robot
 {
-    class Program
+    internal class Program
     {
         //private IUsuarioRepository _iUsuarioRepository;
         public static IUsuarioService _usuarioService;
@@ -19,11 +17,11 @@ namespace ProjetoFinal.Robot
             _usuarioService = new UsuarioService(_unitOfWork);
         }
 
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
             Console.Write("");
-            Perfil perfilProcurado = new Perfil(1,"Novos");
-            List<Usuario> usuarios = _usuarioService.ListarPorPerfil(perfilProcurado);
+            var perfilProcurado = new Perfil(1, "Novos");
+            var usuarios = _usuarioService.ListarPorPerfil(perfilProcurado);
             Console.ReadKey();
         }
     }
