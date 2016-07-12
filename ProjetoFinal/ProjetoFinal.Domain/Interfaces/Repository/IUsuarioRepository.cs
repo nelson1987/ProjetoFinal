@@ -5,6 +5,6 @@ namespace ProjetoFinal.Domain.Interfaces.Repository
 {
     public interface IUsuarioRepository
     {
-        List<Usuario> BuscarPorPerfil(Perfil perfil);
+        List<Usuario> ListarPorPerfil(Perfil perfil);
     }
 }

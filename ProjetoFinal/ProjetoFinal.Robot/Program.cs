@@ -1,27 +1,39 @@
 ﻿using System;
+using System.Linq;
+using ProjetoFinal.Crosscutting.IoC;
 using ProjetoFinal.Domain.Entities;
+using ProjetoFinal.Domain.Interfaces.Repository;
 using ProjetoFinal.Domain.Interfaces.Service;
-using ProjetoFinal.Domain.Interfaces.UnitOfWork;
-using ProjetoFinal.Service.Services;
 
 namespace ProjetoFinal.Robot
 {
-    internal class Program
+    public class Repositorio
     {
-        //private IUsuarioRepository _iUsuarioRepository;
-        public static IUsuarioService _usuarioService;
-        private IUnitOfWork _unitOfWork;
+        private static IUsuarioService _usuarioService;
 
-        public Program()
+        public Repositorio(IUsuarioService usuarioRepository)
         {
-            _usuarioService = new UsuarioService(_unitOfWork);
+            _usuarioService = usuarioRepository;
         }
 
-        private static void Main(string[] args)
+        public Usuario PorPerfil()
         {
-            Console.Write("");
             var perfilProcurado = new Perfil(1, "Novos");
             var usuarios = _usuarioService.ListarPorPerfil(perfilProcurado);
+            return usuarios.FirstOrDefault();
+        }
+    }
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            IoC.Bootstraper();
+            Console.Write("");
+            var perfilProcurado = new Perfil(1, "Novos");
+            //Repositorio repo = new Repositorio();
+
+            //Console.WriteLine(usuarios.FirstOrDefault().Login);
             Console.ReadKey();
         }
     }

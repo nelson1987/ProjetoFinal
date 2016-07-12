@@ -3,33 +3,36 @@ using ProjetoFinal.Domain.Entities;
 using ProjetoFinal.Domain.Interfaces.Repository;
 using ProjetoFinal.Domain.Interfaces.Service;
 using ProjetoFinal.Domain.Interfaces.UnitOfWork;
-using ProjetoFinal.Repository.UnitOfWorks;
 
 namespace ProjetoFinal.Service.Services
 {
     public class UsuarioService : IUsuarioService
     {
-        private readonly IPerfilRepository _perfilRepository;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IUsuarioRepository _usuarioRepository;
 
-        public UsuarioService(IUnitOfWork unitOfWork)
+        public UsuarioService(IUnitOfWork unitOfWork, IUsuarioRepository usuarioRepository)
         {
             _unitOfWork = unitOfWork;
-            _usuarioRepository = _unitOfWork.UsuarioRepository;
-            _perfilRepository = _unitOfWork.PerfilRepository;
+            _usuarioRepository = usuarioRepository;
         }
 
-        public UsuarioService(IUsuarioRepository usuarioRepository)
+
+        public void Save(List<Usuario> members)
         {
-            _unitOfWork = new UnitOfWork();
-            _usuarioRepository = usuarioRepository;
-            _perfilRepository = _unitOfWork.PerfilRepository;
+            members.ForEach(m =>
+            {
+                if (m.Id == default(int))
+                {
+                    //_usuarioRepository.BuscarPorPerfil(m);
+                }
+            });
+            _unitOfWork.Commit();
         }
 
         public List<Usuario> ListarPorPerfil(Perfil perfil)
         {
-            return _usuarioRepository.BuscarPorPerfil(perfil);
+            return _usuarioRepository.ListarPorPerfil(perfil);
         }
 
         public void CriarPerfisDeUsuario()

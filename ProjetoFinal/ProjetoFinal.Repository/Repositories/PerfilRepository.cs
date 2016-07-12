@@ -1,14 +1,19 @@
-﻿using System;
+﻿using System.Data.Entity;
 using ProjetoFinal.Domain.Entities;
 using ProjetoFinal.Domain.Interfaces.Repository;
 
 namespace ProjetoFinal.Repository.Repositories
 {
-    public class PerfilRepository : IPerfilRepository
+    public class PerfilRepository : PadraoRepository<Perfil>, IPerfilRepository
     {
+        public PerfilRepository(DbContext context)
+            : base(context)
+        {
+        }
+
         public Perfil BuscarPorId(int id)
         {
-            throw new NotImplementedException();
+            return Buscar();
         }
     }
 }

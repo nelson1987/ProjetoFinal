@@ -1,6 +1,23 @@
-﻿namespace ProjetoFinal.Crosscutting.Exceptions
+﻿using System;
+
+namespace ProjetoFinal.Crosscutting.Exceptions
 {
-    public class ProjetoFinalException
+    [Serializable]
+    public class ProjetoFinalException : Exception
     {
+        public ProjetoFinalException()
+            : base()
+        {
+        }
+
+        public ProjetoFinalException(string message) 
+            : base(message)
+        {
+        }
+
+        public ProjetoFinalException(string message, Exception innerException)
+            : base(message, innerException)
+        {
+        }
     }
 }

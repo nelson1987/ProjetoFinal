@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data.Entity;
 using ProjetoFinal.Domain.Interfaces.Repository;
 using ProjetoFinal.Domain.Interfaces.UnitOfWork;
 
@@ -12,17 +13,47 @@ namespace ProjetoFinal.Repository.UnitOfWorks
         //    PerfilRepository = perfilRepository;
         //}
 
-        public IUsuarioRepository UsuarioRepository { get; set; }
-        public IPerfilRepository PerfilRepository { get; set; }
+        //public IUsuarioRepository UsuarioRepository { get; set; }
+        //public IPerfilRepository PerfilRepository { get; set; }
 
         public void Commit()
         {
-            throw new NotImplementedException();
+            context.SaveChanges();
         }
 
         public void Rollback()
         {
             throw new NotImplementedException();
         }
+
+
+        public DbContext context;
+        private bool disposed = false;
+
+        public UnitOfWork(DbContext context)
+        {
+            this.context = context;
+        }
+
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!this.disposed)
+            {
+                if (disposing)
+                {
+                    context.Dispose();
+                }
+            }
+
+            this.disposed = true;
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
     }
 }

@@ -7,7 +7,7 @@ namespace ProjetoFinal.Repository.Repositories
 {
     public class UsuarioRepository : IUsuarioRepository
     {
-        public List<Usuario> BuscarPorPerfil(Perfil perfil)
+        public List<Usuario> ListarPorPerfil(Perfil perfil)
         {
             throw new NotImplementedException();
         }

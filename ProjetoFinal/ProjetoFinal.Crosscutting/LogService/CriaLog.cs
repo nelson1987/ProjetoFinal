@@ -1,6 +1,6 @@
 ﻿namespace ProjetoFinal.Crosscutting.LogService
 {
-    internal class CriaLog
+    public class CriaLog
     {
     }
 }

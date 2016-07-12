@@ -2,9 +2,6 @@
 {
     public class Perfil
     {
-        //private string p;
-        //private int perfilId;
-
         protected Perfil()
         {
         }

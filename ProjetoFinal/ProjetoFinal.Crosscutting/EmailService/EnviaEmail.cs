@@ -1,6 +1,6 @@
 ﻿namespace ProjetoFinal.Crosscutting.EmailService
 {
-    internal class EnviaEmail
+    public class EnviaEmail
     {
     }
 }
