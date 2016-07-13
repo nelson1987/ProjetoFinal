@@ -28,7 +28,7 @@ namespace ProjetoFinal.Robot
     {
         static void Main(string[] args)
         {
-            IoC.Bootstraper();
+            //IoC.Bootstraper();
             Console.Write("");
             var perfilProcurado = new Perfil(1, "Novos");
             //Repositorio repo = new Repositorio();

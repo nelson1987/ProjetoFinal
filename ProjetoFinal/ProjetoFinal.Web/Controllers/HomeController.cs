@@ -1,13 +1,12 @@
 ﻿using System.Web.Mvc;
 using ProjetoFinal.Domain.Entities;
 using ProjetoFinal.Domain.Interfaces.Service;
+using System.Web.Security;
 
 namespace ProjetoFinal.Web.Controllers
 {
     public class HomeController : Controller
     {
-
-        //DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));
         private static IUsuarioService _usuarioService;
 
         public HomeController(IUsuarioService usuarioRepository)
@@ -34,6 +33,27 @@ namespace ProjetoFinal.Web.Controllers
             ViewBag.Message = "Your contact page.";
 
             return View();
+        }
+        public ActionResult Logout()
+        {
+            var redirect = RedirectToAction("Index", "Home");
+            return new LogoutActionResult(redirect);
+        }
+    }
+    public class LogoutActionResult : ActionResult
+    {
+        public RedirectToRouteResult ActionAfterLogout
+        {
+            get; set;
+        }
+        public LogoutActionResult(RedirectToRouteResult actionAfterLogout)
+        {
+            ActionAfterLogout = actionAfterLogout;
+        }
+        public override void ExecuteResult(ControllerContext context)
+        {
+            FormsAuthentication.SignOut();
+            ActionAfterLogout.ExecuteResult(context);
         }
     }
 }
