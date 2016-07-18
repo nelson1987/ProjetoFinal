@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using ProjetoFinal.Domain.Entities;
+﻿using ProjetoFinal.Domain.Entities;
+using System.Collections.Generic;
 
 namespace ProjetoFinal.Domain.Interfaces.Repository
 {

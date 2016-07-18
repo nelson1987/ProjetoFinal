@@ -1,8 +1,8 @@
+using ProjetoFinal.Api.Areas.HelpPage.ModelDescriptions;
+using ProjetoFinal.Api.Areas.HelpPage.Models;
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using ProjetoFinal.Api.Areas.HelpPage.ModelDescriptions;
-using ProjetoFinal.Api.Areas.HelpPage.Models;
 
 namespace ProjetoFinal.Api.Areas.HelpPage.Controllers
 {

@@ -1,7 +1,6 @@
-﻿using System;
+﻿using ProjetoFinal.Domain.Interfaces.UnitOfWork;
+using System;
 using System.Data.Entity;
-using ProjetoFinal.Domain.Interfaces.Repository;
-using ProjetoFinal.Domain.Interfaces.UnitOfWork;
 
 namespace ProjetoFinal.Repository.UnitOfWorks
 {

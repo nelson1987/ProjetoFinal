@@ -1,12 +1,12 @@
-﻿using System.Data.Entity;
-using ProjetoFinal.Dal.Contexts;
-using SimpleInjector;
+﻿using ProjetoFinal.Dal.Contexts;
 using ProjetoFinal.Domain.Interfaces.Repository;
 using ProjetoFinal.Domain.Interfaces.Service;
 using ProjetoFinal.Domain.Interfaces.UnitOfWork;
 using ProjetoFinal.Repository.Repositories;
 using ProjetoFinal.Repository.UnitOfWorks;
 using ProjetoFinal.Service.Services;
+using SimpleInjector;
+using System.Data.Entity;
 
 namespace ProjetoFinal.Crosscutting.IoC
 {

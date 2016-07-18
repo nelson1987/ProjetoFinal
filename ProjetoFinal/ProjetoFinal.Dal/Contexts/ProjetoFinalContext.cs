@@ -1,6 +1,6 @@
+using ProjetoFinal.Domain.Entities;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-using ProjetoFinal.Domain.Entities;
 namespace ProjetoFinal.Dal.Contexts
 {
     public class ProjetoFinalContext : DbContext

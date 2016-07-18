@@ -1,8 +1,8 @@
-﻿using System;
+﻿using ProjetoFinal.Domain.Entities;
+using ProjetoFinal.Domain.Interfaces.Repository;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
-using ProjetoFinal.Domain.Entities;
-using ProjetoFinal.Domain.Interfaces.Repository;
 
 namespace ProjetoFinal.Repository.Repositories
 {

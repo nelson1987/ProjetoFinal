@@ -1,8 +1,8 @@
-﻿using System.Collections.Generic;
-using ProjetoFinal.Domain.Entities;
+﻿using ProjetoFinal.Domain.Entities;
 using ProjetoFinal.Domain.Interfaces.Repository;
 using ProjetoFinal.Domain.Interfaces.Service;
 using ProjetoFinal.Domain.Interfaces.UnitOfWork;
+using System.Collections.Generic;
 
 namespace ProjetoFinal.Service.Services
 {

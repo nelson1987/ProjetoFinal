@@ -1,7 +1,7 @@
-﻿using System;
-using System.Linq;
-using ProjetoFinal.Domain.Entities;
+﻿using ProjetoFinal.Domain.Entities;
 using ProjetoFinal.Domain.Interfaces.Service;
+using System;
+using System.Linq;
 
 namespace ProjetoFinal.Robot
 {

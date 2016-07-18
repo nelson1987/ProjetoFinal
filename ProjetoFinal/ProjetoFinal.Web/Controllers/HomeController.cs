@@ -1,6 +1,6 @@
-﻿using System.Web.Mvc;
-using ProjetoFinal.Domain.Entities;
+﻿using ProjetoFinal.Domain.Entities;
 using ProjetoFinal.Domain.Interfaces.Service;
+using System.Web.Mvc;
 using System.Web.Security;
 
 namespace ProjetoFinal.Web.Controllers

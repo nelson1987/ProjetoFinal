@@ -1,9 +1,9 @@
-﻿using System.Web.Mvc;
-using System.Web.Optimization;
-using System.Web.Routing;
-using ProjetoFinal.Crosscutting.IoC;
+﻿using ProjetoFinal.Crosscutting.IoC;
 using SimpleInjector;
 using SimpleInjector.Integration.Web.Mvc;
+using System.Web.Mvc;
+using System.Web.Optimization;
+using System.Web.Routing;
 
 namespace ProjetoFinal.Web
 {
@@ -17,7 +17,6 @@ namespace ProjetoFinal.Web
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             var container = new Container();
-
             IoC.Bootstraper(container);
             DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));
             

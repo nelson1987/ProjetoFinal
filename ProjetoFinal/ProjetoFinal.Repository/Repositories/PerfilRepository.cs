@@ -1,6 +1,6 @@
-﻿using System.Data.Entity;
-using ProjetoFinal.Domain.Entities;
+﻿using ProjetoFinal.Domain.Entities;
 using ProjetoFinal.Domain.Interfaces.Repository;
+using System.Data.Entity;
 
 namespace ProjetoFinal.Repository.Repositories
 {

@@ -1,7 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using ProjetoFinal.Repository.Interfaces;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using ProjetoFinal.Repository.Interfaces;
 
 namespace ProjetoFinal.Repository.Repositories
 {
