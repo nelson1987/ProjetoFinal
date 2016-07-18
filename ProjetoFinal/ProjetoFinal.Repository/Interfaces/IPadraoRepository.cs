@@ -2,5 +2,6 @@
 {
     public interface IPadraoRepository<TEntity> where TEntity : class
     {
+
     }
 }

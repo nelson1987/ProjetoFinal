@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using ProjetoFinal.Repository.Interfaces;
 
@@ -18,6 +19,16 @@ namespace ProjetoFinal.Repository.Repositories
         public virtual void Insert(TEntity entity)
         {
             DbSet.Add(entity);
+        }
+        public virtual List<TEntity> Listar(int id)
+        {
+            return DbSet.ToList();
+        }
+
+        public virtual void Update(TEntity entity)
+        {
+            DbSet.Attach(entity);
+            Context.Entry(entity).State = EntityState.Modified;
         }
 
         public TEntity Buscar()

@@ -1,5 +1,4 @@
 ﻿using System.Data.Entity;
-using System.Data.Entity.Infrastructure.DependencyResolution;
 using ProjetoFinal.Dal.Contexts;
 using SimpleInjector;
 using ProjetoFinal.Domain.Interfaces.Repository;
@@ -13,14 +12,6 @@ namespace ProjetoFinal.Crosscutting.IoC
 {
     public static class IoC
     {
-
-        private static Container container;
-
-        // Register your types, for instance:
-        //container.Register<IUserRepository, SqlUserRepository>(Lifestyle.Singleton);
-        //container.Register<IUserContext, WinFormsUserContext>();
-        //container.Register<Form1>();
-
         public static Container Bootstraper(Container container)
         {
             container.Register<IUsuarioRepository, UsuarioRepository>();
@@ -31,13 +22,6 @@ namespace ProjetoFinal.Crosscutting.IoC
 
             container.Verify();
             return container;
-            //(Lifestyle.Singleton);
-
-            // 3. Optionally verify the container's configuration.
-            //container.Verify();
-
-            // 4. Register the container as MVC3 IDependencyResolver.
-            //DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));
         }
     }
 }

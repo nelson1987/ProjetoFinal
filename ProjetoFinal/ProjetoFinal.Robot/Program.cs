@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Linq;
-using ProjetoFinal.Crosscutting.IoC;
 using ProjetoFinal.Domain.Entities;
-using ProjetoFinal.Domain.Interfaces.Repository;
 using ProjetoFinal.Domain.Interfaces.Service;
 
 namespace ProjetoFinal.Robot

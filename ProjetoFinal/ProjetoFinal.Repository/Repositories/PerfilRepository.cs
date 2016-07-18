@@ -11,9 +11,15 @@ namespace ProjetoFinal.Repository.Repositories
         {
         }
 
+        public override void Insert(Perfil entity)
+        {
+            entity.Nome = "Nelson";
+            base.Insert(entity);
+        }
+
         public Perfil BuscarPorId(int id)
         {
-            return Buscar();
+            return base.Buscar();
         }
     }
 }
