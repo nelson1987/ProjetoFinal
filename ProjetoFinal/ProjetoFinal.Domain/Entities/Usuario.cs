@@ -1,6 +1,6 @@
-﻿using ProjetoFinal.Domain.ValueObjects;
+﻿using Ephesto.Domain.ValueObjects;
 
-namespace ProjetoFinal.Domain.Entities
+namespace Ephesto.Domain.Entities
 {
     public class Usuario
     {

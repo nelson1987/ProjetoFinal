@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Linq;
 using System.Reflection;
 
-namespace ProjetoFinal.Api.Areas.HelpPage.ModelDescriptions
+namespace Ephesto.Api.Areas.HelpPage.ModelDescriptions
 {
     internal static class ModelNameHelper
     {

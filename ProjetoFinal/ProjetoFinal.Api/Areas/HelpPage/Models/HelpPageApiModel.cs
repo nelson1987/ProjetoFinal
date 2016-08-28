@@ -1,10 +1,10 @@
-using ProjetoFinal.Api.Areas.HelpPage.ModelDescriptions;
+using Ephesto.Api.Areas.HelpPage.ModelDescriptions;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Web.Http.Description;
 
-namespace ProjetoFinal.Api.Areas.HelpPage.Models
+namespace Ephesto.Api.Areas.HelpPage.Models
 {
     /// <summary>
     /// The model that represents an API displayed on the help page.

@@ -1,6 +1,6 @@
 ﻿using System.Web.Optimization;
 
-namespace ProjetoFinal.Web
+namespace Ephesto.Web
 {
     public class BundleConfig
     {

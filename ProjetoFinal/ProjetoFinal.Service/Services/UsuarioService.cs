@@ -1,22 +1,19 @@
-﻿using ProjetoFinal.Domain.Entities;
-using ProjetoFinal.Domain.Interfaces.Repository;
-using ProjetoFinal.Domain.Interfaces.Service;
-using ProjetoFinal.Domain.Interfaces.UnitOfWork;
+﻿using Ephesto.Domain.Entities;
+using Ephesto.Domain.Interfaces.Repository;
+using Ephesto.Domain.Interfaces.Service;
+using Ephesto.Domain.Interfaces.UnitOfWork;
 using System.Collections.Generic;
 
-namespace ProjetoFinal.Service.Services
+namespace Ephesto.Service.Services
 {
     public class UsuarioService : IUsuarioService
     {
         private readonly IUnitOfWork _unitOfWork;
-        private readonly IUsuarioRepository _usuarioRepository;
 
-        public UsuarioService(IUnitOfWork unitOfWork, IUsuarioRepository usuarioRepository)
+        public UsuarioService(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
-            _usuarioRepository = usuarioRepository;
         }
-
 
         public void Save(List<Usuario> members)
         {
@@ -32,7 +29,7 @@ namespace ProjetoFinal.Service.Services
 
         public List<Usuario> ListarPorPerfil(Perfil perfil)
         {
-            return _usuarioRepository.ListarPorPerfil(perfil);
+            return _unitOfWork.UsuarioRepository.ListarPorPerfil(perfil);
         }
 
         public void CriarPerfisDeUsuario()

@@ -1,10 +1,10 @@
-using ProjetoFinal.Api.Areas.HelpPage.ModelDescriptions;
-using ProjetoFinal.Api.Areas.HelpPage.Models;
+using Ephesto.Api.Areas.HelpPage.ModelDescriptions;
+using Ephesto.Api.Areas.HelpPage.Models;
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace ProjetoFinal.Api.Areas.HelpPage.Controllers
+namespace Ephesto.Api.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

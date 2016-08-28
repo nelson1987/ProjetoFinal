@@ -1,6 +1,6 @@
 using System;
 
-namespace ProjetoFinal.Api.Areas.HelpPage.ModelDescriptions
+namespace Ephesto.Api.Areas.HelpPage.ModelDescriptions
 {
     public class ParameterAnnotation
     {

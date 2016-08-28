@@ -1,24 +1,24 @@
-﻿using ProjetoFinal.Dal.Contexts;
-using ProjetoFinal.Domain.Interfaces.Repository;
-using ProjetoFinal.Domain.Interfaces.Service;
-using ProjetoFinal.Domain.Interfaces.UnitOfWork;
-using ProjetoFinal.Repository.Repositories;
-using ProjetoFinal.Repository.UnitOfWorks;
-using ProjetoFinal.Service.Services;
+﻿using Ephesto.Dal.Contexts;
+using Ephesto.Domain.Interfaces.Repository;
+using Ephesto.Domain.Interfaces.Service;
+using Ephesto.Domain.Interfaces.UnitOfWork;
+using Ephesto.Repository.Repositories;
+using Ephesto.Repository.UnitOfWorks;
+using Ephesto.Service.Services;
 using SimpleInjector;
 using System.Data.Entity;
 
-namespace ProjetoFinal.Crosscutting.IoC
+namespace Ephesto.Crosscutting.IoC
 {
     public static class IoC
     {
         public static Container Bootstraper(Container container)
         {
-            container.Register<IUsuarioRepository, UsuarioRepository>();
+            container.Register<IUsuarioRepository, UsuarioRepository>(Lifestyle.Singleton);
             container.Register<IPerfilRepository, PerfilRepository>();
             container.Register<IUsuarioService, UsuarioService>();
             container.Register<DbContext, ProjetoFinalContext>(Lifestyle.Singleton);
-            container.Register<IUnitOfWork, UnitOfWork>();
+            container.Register<IUnitOfWork, UnitOfWork>(Lifestyle.Singleton);
 
             container.Verify();
             return container;

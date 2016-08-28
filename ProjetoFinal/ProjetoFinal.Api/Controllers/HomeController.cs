@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace ProjetoFinal.Api.Controllers
+namespace Ephesto.Api.Controllers
 {
     public class HomeController : Controller
     {

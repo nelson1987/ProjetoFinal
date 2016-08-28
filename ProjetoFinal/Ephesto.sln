@@ -23,23 +23,27 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5-Domain", "5-Domain", "{5E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6-External", "6-External", "{4BFD3E84-A206-41FD-ADB6-9D55942E3773}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoFinal.Crosscutting", "ProjetoFinal.Crosscutting\ProjetoFinal.Crosscutting.csproj", "{98955287-33B4-48AD-890D-7DD148ABE0F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ephesto.Crosscutting", "ProjetoFinal.Crosscutting\Ephesto.Crosscutting.csproj", "{98955287-33B4-48AD-890D-7DD148ABE0F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoFinal.Dal", "ProjetoFinal.Dal\ProjetoFinal.Dal.csproj", "{B7964F8D-0958-45AC-876D-92D6CEA87794}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ephesto.Dal", "ProjetoFinal.Dal\Ephesto.Dal.csproj", "{B7964F8D-0958-45AC-876D-92D6CEA87794}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoFinal.Robot", "ProjetoFinal.Robot\ProjetoFinal.Robot.csproj", "{950D73B9-8DAC-4100-9705-0C0F2BFC1163}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ephesto.Robot", "ProjetoFinal.Robot\Ephesto.Robot.csproj", "{950D73B9-8DAC-4100-9705-0C0F2BFC1163}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoFinal.Domain", "ProjetoFinal.Domain\ProjetoFinal.Domain.csproj", "{07712B62-2F3C-4C04-9A46-4CA4B1F09796}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ephesto.Domain", "ProjetoFinal.Domain\Ephesto.Domain.csproj", "{07712B62-2F3C-4C04-9A46-4CA4B1F09796}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoFinal.Service", "ProjetoFinal.Service\ProjetoFinal.Service.csproj", "{8ED29BC1-6022-404B-8DB2-C0A28A4474BB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ephesto.Service", "ProjetoFinal.Service\Ephesto.Service.csproj", "{8ED29BC1-6022-404B-8DB2-C0A28A4474BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoFinal.Repository", "ProjetoFinal.Repository\ProjetoFinal.Repository.csproj", "{2251F742-1144-4CAC-9FC4-2C1F336A4998}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ephesto.Repository", "ProjetoFinal.Repository\Ephesto.Repository.csproj", "{2251F742-1144-4CAC-9FC4-2C1F336A4998}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoFinal.Web", "ProjetoFinal.Web\ProjetoFinal.Web.csproj", "{359F9029-5F19-4CC7-A820-AA8394862406}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ephesto.Web", "ProjetoFinal.Web\Ephesto.Web.csproj", "{359F9029-5F19-4CC7-A820-AA8394862406}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.4-Api", "0.4-Api", "{1B3EE452-BE62-449E-BAE7-937AD5C8E5C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoFinal.Api", "ProjetoFinal.Api\ProjetoFinal.Api.csproj", "{2FEE1803-AE71-48E3-9224-F0FB61DBE56B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ephesto.Api", "ProjetoFinal.Api\Ephesto.Api.csproj", "{2FEE1803-AE71-48E3-9224-F0FB61DBE56B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ephesto.Domain.Tests", "Ephesto.Domain.Tests\Ephesto.Domain.Tests.csproj", "{D7949B42-AF2A-4EC3-85CE-FFB23E0B3BC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ephesto.Service.Tests", "Ephesto.Service.Tests\Ephesto.Service.Tests.csproj", "{981078FB-D8EB-4D26-992D-4E219BEFC389}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +83,14 @@ Global
 		{2FEE1803-AE71-48E3-9224-F0FB61DBE56B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FEE1803-AE71-48E3-9224-F0FB61DBE56B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FEE1803-AE71-48E3-9224-F0FB61DBE56B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7949B42-AF2A-4EC3-85CE-FFB23E0B3BC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7949B42-AF2A-4EC3-85CE-FFB23E0B3BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7949B42-AF2A-4EC3-85CE-FFB23E0B3BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7949B42-AF2A-4EC3-85CE-FFB23E0B3BC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{981078FB-D8EB-4D26-992D-4E219BEFC389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{981078FB-D8EB-4D26-992D-4E219BEFC389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{981078FB-D8EB-4D26-992D-4E219BEFC389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{981078FB-D8EB-4D26-992D-4E219BEFC389}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,5 +108,7 @@ Global
 		{359F9029-5F19-4CC7-A820-AA8394862406} = {4A8F3FB3-61C9-4CDF-B429-17E148FDE71B}
 		{1B3EE452-BE62-449E-BAE7-937AD5C8E5C1} = {6C97C31B-B535-4D84-A2AD-EF0A8B9B56A8}
 		{2FEE1803-AE71-48E3-9224-F0FB61DBE56B} = {1B3EE452-BE62-449E-BAE7-937AD5C8E5C1}
+		{D7949B42-AF2A-4EC3-85CE-FFB23E0B3BC7} = {5E898C26-A10A-41F7-87D2-4160F40FDBC9}
+		{981078FB-D8EB-4D26-992D-4E219BEFC389} = {C68C5B26-57C7-42FE-8C97-D31051F8077D}
 	EndGlobalSection
 EndGlobal

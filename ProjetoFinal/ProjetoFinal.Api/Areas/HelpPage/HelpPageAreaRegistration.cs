@@ -1,7 +1,7 @@
 using System.Web.Http;
 using System.Web.Mvc;
 
-namespace ProjetoFinal.Api.Areas.HelpPage
+namespace Ephesto.Api.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

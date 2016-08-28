@@ -1,4 +1,4 @@
-﻿namespace ProjetoFinal.Domain.ValueObjects
+﻿namespace Ephesto.Domain.ValueObjects
 {
     public class Email
     {

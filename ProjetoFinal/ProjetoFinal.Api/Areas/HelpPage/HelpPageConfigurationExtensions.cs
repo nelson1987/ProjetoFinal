@@ -1,5 +1,5 @@
-using ProjetoFinal.Api.Areas.HelpPage.ModelDescriptions;
-using ProjetoFinal.Api.Areas.HelpPage.Models;
+using Ephesto.Api.Areas.HelpPage.ModelDescriptions;
+using Ephesto.Api.Areas.HelpPage.Models;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -14,7 +14,7 @@ using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 
-namespace ProjetoFinal.Api.Areas.HelpPage
+namespace Ephesto.Api.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

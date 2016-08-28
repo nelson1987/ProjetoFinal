@@ -1,7 +1,7 @@
-﻿using ProjetoFinal.Domain.Entities;
+﻿using Ephesto.Domain.Entities;
 using System;
 
-namespace ProjetoFinal.Domain.Factories
+namespace Ephesto.Domain.Factories
 {
     public class UsuarioFactories
     {

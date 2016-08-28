@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ProjetoFinal.Crosscutting.Exceptions
+namespace Ephesto.Crosscutting.Exceptions
 {
     public interface IProjetoFinalException
     {

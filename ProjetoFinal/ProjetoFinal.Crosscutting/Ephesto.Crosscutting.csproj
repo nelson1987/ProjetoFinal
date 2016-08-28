@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{950D73B9-8DAC-4100-9705-0C0F2BFC1163}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{98955287-33B4-48AD-890D-7DD148ABE0F9}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProjetoFinal.Robot</RootNamespace>
-    <AssemblyName>ProjetoFinal.Robot</AssemblyName>
+    <RootNamespace>Ephesto.Crosscutting</RootNamespace>
+    <AssemblyName>Ephesto.Crosscutting</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -32,28 +30,47 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector">
+      <HintPath>..\packages\SimpleInjector.3.2.0\lib\net45\SimpleInjector.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="EmailService\EnviaEmail.cs" />
+    <Compile Include="Exceptions\ProjetoFinalException.cs" />
+    <Compile Include="FileService\ExportaCSV.cs" />
+    <Compile Include="FileService\ExportaPDF.cs" />
+    <Compile Include="FileService\ExportaXLS.cs" />
+    <Compile Include="IoC\IoC.cs" />
+    <Compile Include="LogService\CriaLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <Folder Include="Authentication\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProjetoFinal.Crosscutting\ProjetoFinal.Crosscutting.csproj">
-      <Project>{98955287-33b4-48ad-890d-7dd148abe0f9}</Project>
-      <Name>ProjetoFinal.Crosscutting</Name>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProjetoFinal.Dal\Ephesto.Dal.csproj">
+      <Project>{B7964F8D-0958-45AC-876D-92D6CEA87794}</Project>
+      <Name>Ephesto.Dal</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ProjetoFinal.Domain\ProjetoFinal.Domain.csproj">
-      <Project>{07712b62-2f3c-4c04-9a46-4ca4b1f09796}</Project>
-      <Name>ProjetoFinal.Domain</Name>
+    <ProjectReference Include="..\ProjetoFinal.Domain\Ephesto.Domain.csproj">
+      <Project>{07712B62-2F3C-4C04-9A46-4CA4B1F09796}</Project>
+      <Name>Ephesto.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ProjetoFinal.Service\ProjetoFinal.Service.csproj">
-      <Project>{8ed29bc1-6022-404b-8db2-c0a28a4474bb}</Project>
-      <Name>ProjetoFinal.Service</Name>
+    <ProjectReference Include="..\ProjetoFinal.Repository\Ephesto.Repository.csproj">
+      <Project>{2251F742-1144-4CAC-9FC4-2C1F336A4998}</Project>
+      <Name>Ephesto.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjetoFinal.Service\Ephesto.Service.csproj">
+      <Project>{8ED29BC1-6022-404B-8DB2-C0A28A4474BB}</Project>
+      <Name>Ephesto.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,4 +1,4 @@
-﻿namespace ProjetoFinal.Domain.Entities
+﻿namespace Ephesto.Domain.Entities
 {
     public class Perfil
     {

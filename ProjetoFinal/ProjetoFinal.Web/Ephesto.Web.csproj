@@ -11,8 +11,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProjetoFinal.Web</RootNamespace>
-    <AssemblyName>ProjetoFinal.Web</AssemblyName>
+    <RootNamespace>Ephesto.Web</RootNamespace>
+    <AssemblyName>Ephesto.Web</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -39,6 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Facebook">
+      <HintPath>..\packages\Facebook.7.0.6\lib\net45\Facebook.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="SimpleInjector, Version=3.2.0.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -118,13 +121,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActionFilters\LogCabecalhoFilters.cs" />
+    <Compile Include="ActionResults\LogoutAction.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\FaceController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="JsonResults\PadraoJsonResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +170,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Face\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -176,13 +184,13 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProjetoFinal.Crosscutting\ProjetoFinal.Crosscutting.csproj">
+    <ProjectReference Include="..\ProjetoFinal.Crosscutting\Ephesto.Crosscutting.csproj">
       <Project>{98955287-33b4-48ad-890d-7dd148abe0f9}</Project>
-      <Name>ProjetoFinal.Crosscutting</Name>
+      <Name>Ephesto.Crosscutting</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ProjetoFinal.Domain\ProjetoFinal.Domain.csproj">
+    <ProjectReference Include="..\ProjetoFinal.Domain\Ephesto.Domain.csproj">
       <Project>{07712b62-2f3c-4c04-9a46-4ca4b1f09796}</Project>
-      <Name>ProjetoFinal.Domain</Name>
+      <Name>Ephesto.Domain</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

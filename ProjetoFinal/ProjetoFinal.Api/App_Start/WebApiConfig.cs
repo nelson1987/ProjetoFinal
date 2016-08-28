@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace ProjetoFinal.Api
+namespace Ephesto.Api
 {
     public static class WebApiConfig
     {

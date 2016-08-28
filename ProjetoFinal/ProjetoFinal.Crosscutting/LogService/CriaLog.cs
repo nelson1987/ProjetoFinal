@@ -1,4 +1,4 @@
-﻿namespace ProjetoFinal.Crosscutting.LogService
+﻿namespace Ephesto.Crosscutting.LogService
 {
     public class CriaLog
     {

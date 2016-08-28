@@ -1,6 +1,6 @@
 using System.Collections.ObjectModel;
 
-namespace ProjetoFinal.Api.Areas.HelpPage.ModelDescriptions
+namespace Ephesto.Api.Areas.HelpPage.ModelDescriptions
 {
     public class ComplexTypeModelDescription : ModelDescription
     {

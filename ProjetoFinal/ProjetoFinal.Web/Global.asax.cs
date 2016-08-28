@@ -1,11 +1,11 @@
-﻿using ProjetoFinal.Crosscutting.IoC;
+﻿using Ephesto.Crosscutting.IoC;
 using SimpleInjector;
 using SimpleInjector.Integration.Web.Mvc;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 
-namespace ProjetoFinal.Web
+namespace Ephesto.Web
 {
     public class MvcApplication : System.Web.HttpApplication
     {

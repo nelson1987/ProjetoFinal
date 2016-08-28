@@ -3,7 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
-namespace ProjetoFinal.Api.Areas.HelpPage
+namespace Ephesto.Api.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
     {

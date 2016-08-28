@@ -1,10 +1,10 @@
-﻿using ProjetoFinal.Domain.Entities;
-using ProjetoFinal.Domain.Interfaces.Repository;
+﻿using Ephesto.Domain.Entities;
+using Ephesto.Domain.Interfaces.Repository;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 
-namespace ProjetoFinal.Repository.Repositories
+namespace Ephesto.Repository.Repositories
 {
     public class UsuarioRepository : PadraoRepository<Usuario>, IUsuarioRepository
     {
@@ -15,7 +15,6 @@ namespace ProjetoFinal.Repository.Repositories
 
         public List<Usuario> ListarPorPerfil(Perfil perfil)
         {
-
             return this.DbSet.Where(c => c.Perfil.Equals(perfil)).ToList();
         }
 

@@ -1,7 +1,7 @@
 using System;
 using System.Reflection;
 
-namespace ProjetoFinal.Api.Areas.HelpPage.ModelDescriptions
+namespace Ephesto.Api.Areas.HelpPage.ModelDescriptions
 {
     public interface IModelDocumentationProvider
     {

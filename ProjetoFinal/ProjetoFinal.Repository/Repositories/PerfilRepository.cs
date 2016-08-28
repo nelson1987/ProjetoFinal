@@ -1,8 +1,8 @@
-﻿using ProjetoFinal.Domain.Entities;
-using ProjetoFinal.Domain.Interfaces.Repository;
+﻿using Ephesto.Domain.Entities;
+using Ephesto.Domain.Interfaces.Repository;
 using System.Data.Entity;
 
-namespace ProjetoFinal.Repository.Repositories
+namespace Ephesto.Repository.Repositories
 {
     public class PerfilRepository : PadraoRepository<Perfil>, IPerfilRepository
     {

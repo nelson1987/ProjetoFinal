@@ -1,9 +1,9 @@
-﻿using ProjetoFinal.Repository.Interfaces;
+﻿using Ephesto.Repository.Interfaces;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 
-namespace ProjetoFinal.Repository.Repositories
+namespace Ephesto.Repository.Repositories
 {
     public abstract class PadraoRepository<TEntity> : IPadraoRepository<TEntity> where TEntity : class
     {

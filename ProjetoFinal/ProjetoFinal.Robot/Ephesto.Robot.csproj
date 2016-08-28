@@ -4,15 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B7964F8D-0958-45AC-876D-92D6CEA87794}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{950D73B9-8DAC-4100-9705-0C0F2BFC1163}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProjetoFinal.Dal</RootNamespace>
-    <AssemblyName>ProjetoFinal.Dal</AssemblyName>
+    <RootNamespace>Ephesto.Robot</RootNamespace>
+    <AssemblyName>Ephesto.Robot</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -30,31 +32,28 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
-    <Reference Include="EntityFramework.SqlServer">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Contexts\ProjetoFinalContext.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="EntityMaps\" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ProjetoFinal.Domain\ProjetoFinal.Domain.csproj">
+    <ProjectReference Include="..\ProjetoFinal.Crosscutting\Ephesto.Crosscutting.csproj">
+      <Project>{98955287-33b4-48ad-890d-7dd148abe0f9}</Project>
+      <Name>Ephesto.Crosscutting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjetoFinal.Domain\Ephesto.Domain.csproj">
       <Project>{07712b62-2f3c-4c04-9a46-4ca4b1f09796}</Project>
-      <Name>ProjetoFinal.Domain</Name>
+      <Name>Ephesto.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProjetoFinal.Service\Ephesto.Service.csproj">
+      <Project>{8ed29bc1-6022-404b-8db2-c0a28a4474bb}</Project>
+      <Name>Ephesto.Service</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

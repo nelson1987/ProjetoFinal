@@ -1,7 +1,7 @@
-﻿using ProjetoFinal.Domain.Entities;
+﻿using Ephesto.Domain.Entities;
 using System.Collections.Generic;
 
-namespace ProjetoFinal.Domain.Interfaces.Service
+namespace Ephesto.Domain.Interfaces.Service
 {
     public interface IUsuarioService
     {

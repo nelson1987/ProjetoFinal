@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace ProjetoFinal.Web
+namespace Ephesto.Web
 {
     public class RouteConfig
     {

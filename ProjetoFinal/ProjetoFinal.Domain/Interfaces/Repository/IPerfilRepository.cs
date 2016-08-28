@@ -1,6 +1,6 @@
-﻿using ProjetoFinal.Domain.Entities;
+﻿using Ephesto.Domain.Entities;
 
-namespace ProjetoFinal.Domain.Interfaces.Repository
+namespace Ephesto.Domain.Interfaces.Repository
 {
     public interface IPerfilRepository
     {

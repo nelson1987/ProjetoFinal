@@ -1,7 +1,7 @@
-using ProjetoFinal.Domain.Entities;
+using Ephesto.Domain.Entities;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
-namespace ProjetoFinal.Dal.Contexts
+namespace Ephesto.Dal.Contexts
 {
     public class ProjetoFinalContext : DbContext
     {

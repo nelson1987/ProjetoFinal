@@ -1,4 +1,4 @@
-using ProjetoFinal.Api.Areas.HelpPage.ModelDescriptions;
+using Ephesto.Api.Areas.HelpPage.ModelDescriptions;
 using System;
 using System.Globalization;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 using System.Xml.XPath;
 
-namespace ProjetoFinal.Api.Areas.HelpPage
+namespace Ephesto.Api.Areas.HelpPage
 {
     /// <summary>
     /// A custom <see cref="IDocumentationProvider"/> that reads the API documentation from an XML documentation file.

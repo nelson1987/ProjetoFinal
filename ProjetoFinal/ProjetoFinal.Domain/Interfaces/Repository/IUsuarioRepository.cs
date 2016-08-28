@@ -1,7 +1,7 @@
-﻿using ProjetoFinal.Domain.Entities;
+﻿using Ephesto.Domain.Entities;
 using System.Collections.Generic;
 
-namespace ProjetoFinal.Domain.Interfaces.Repository
+namespace Ephesto.Domain.Interfaces.Repository
 {
     public interface IUsuarioRepository
     {
