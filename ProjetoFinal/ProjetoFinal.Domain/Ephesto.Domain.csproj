@@ -39,7 +39,9 @@
     <Compile Include="Entities\Usuario.cs" />
     <Compile Include="Entities\UsuarioContratante.cs" />
     <Compile Include="Factories\UsuarioFactories.cs" />
+    <Compile Include="Interfaces\Repository\ILogRepository.cs" />
     <Compile Include="Interfaces\Repository\IPerfilRepository.cs" />
+    <Compile Include="Interfaces\Repository\IPessoaRepository.cs" />
     <Compile Include="Interfaces\Repository\IUsuarioRepository.cs" />
     <Compile Include="Interfaces\Service\IUsuarioService.cs" />
     <Compile Include="Interfaces\UnitOfWork\IUnitOfWork.cs" />

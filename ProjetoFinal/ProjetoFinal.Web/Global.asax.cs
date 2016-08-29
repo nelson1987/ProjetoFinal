@@ -1,4 +1,5 @@
-﻿using Ephesto.Crosscutting.IoC;
+﻿using System.Reflection;
+using Ephesto.Crosscutting.IoC;
 using SimpleInjector;
 using SimpleInjector.Integration.Web.Mvc;
 using System.Web.Mvc;
@@ -18,7 +19,10 @@ namespace Ephesto.Web
 
             var container = new Container();
             IoC.Bootstraper(container);
-            DependencyResolver.SetResolver(new SimpleInjectorDependencyResolver(container));
+            container.RegisterMvcControllers(Assembly.GetExecutingAssembly());
+            DependencyResolver.SetResolver(
+                new SimpleInjectorDependencyResolver(container));
+        }
             
         }
     }

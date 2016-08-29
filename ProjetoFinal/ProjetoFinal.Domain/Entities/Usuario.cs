@@ -26,10 +26,15 @@ namespace Ephesto.Domain.Entities
         }
 
         public int Id { get; set; }
+
         public string Nome { get; set; }
+
         public string Login { get; set; }
+
         public string Senha { get; set; }
+
         public Email Email { get; set; }
+
         public Perfil Perfil { get; set; }
 
         public bool Validar(Usuario usuario)

@@ -1,6 +1,7 @@
 ﻿using System;
 using Ephesto.Domain.Entities;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Ephesto.Crosscutting.Exceptions;
 
 namespace Ephesto.Domain.Tests.Entities
 {

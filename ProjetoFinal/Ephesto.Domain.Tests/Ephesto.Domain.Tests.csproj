@@ -54,6 +54,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ProjetoFinal.Crosscutting\Ephesto.Crosscutting.csproj">
+      <Project>{98955287-33b4-48ad-890d-7dd148abe0f9}</Project>
+      <Name>Ephesto.Crosscutting</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ProjetoFinal.Domain\Ephesto.Domain.csproj">
       <Project>{07712B62-2F3C-4C04-9A46-4CA4B1F09796}</Project>
       <Name>Ephesto.Domain</Name>
