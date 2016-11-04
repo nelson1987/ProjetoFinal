@@ -3,7 +3,6 @@
     public interface ILogRepository
     {
         string Nome { get; set; }
-
         void CriarLog(string nomePessoa);
     }
 }
