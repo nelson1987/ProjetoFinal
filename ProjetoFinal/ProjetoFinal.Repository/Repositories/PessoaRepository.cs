@@ -1,5 +1,6 @@
 ﻿using System.Data.Entity;
 using Ephesto.Domain.Entities;
+using Ephesto.Domain.Interfaces.Repository;
 using Ephesto.Domain.Interfaces.UnitOfWork;
 
 namespace Ephesto.Repository.Repositories

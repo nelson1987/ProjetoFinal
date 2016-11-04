@@ -1,4 +1,5 @@
-﻿using Ephesto.Domain.Interfaces.UnitOfWork;
+﻿using Ephesto.Domain.Interfaces.Repository;
+using Ephesto.Domain.Interfaces.UnitOfWork;
 
 namespace Ephesto.Repository.Repositories
 {

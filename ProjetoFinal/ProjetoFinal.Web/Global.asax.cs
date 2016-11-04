@@ -23,7 +23,5 @@ namespace Ephesto.Web
             DependencyResolver.SetResolver(
                 new SimpleInjectorDependencyResolver(container));
         }
-            
-        }
     }
 }
