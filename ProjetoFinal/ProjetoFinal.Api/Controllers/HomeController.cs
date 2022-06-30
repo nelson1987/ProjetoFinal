@@ -7,6 +7,7 @@ namespace Ephesto.Api.Controllers
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
+            ViewBag.Data = "Teste";
 
             return View();
         }
